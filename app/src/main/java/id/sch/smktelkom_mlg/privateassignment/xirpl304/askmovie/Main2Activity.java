@@ -87,12 +87,16 @@ public class Main2Activity extends AppCompatActivity
             fragment = new HomeFragment();
             setTitle("Home");
         } else if (id == R.id.nav_popular) {
+            fragment = new PopularFragment();
+            setTitle("Popular");
 
         } else if (id == R.id.nav_toprated) {
+            fragment = new ToprateFragment();
+            setTitle("Top Rate");
 
         } else if (id == R.id.nav_upcoming) {
-
-        } else if (id == R.id.nav_recom) {
+            fragment = new UpcomFragment();
+            setTitle("Up Coming");
 
         } else if (id == R.id.nav_like) {
 

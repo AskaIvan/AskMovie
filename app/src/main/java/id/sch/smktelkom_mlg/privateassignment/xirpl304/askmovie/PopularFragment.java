@@ -16,7 +16,7 @@ import com.google.gson.Gson;
 
 import java.util.ArrayList;
 
-import id.sch.smktelkom_mlg.privateassignment.xirpl304.askmovie.adapter.MyAdapter;
+import id.sch.smktelkom_mlg.privateassignment.xirpl304.askmovie.adapter.MyPopular;
 import id.sch.smktelkom_mlg.privateassignment.xirpl304.askmovie.model.Results;
 import id.sch.smktelkom_mlg.privateassignment.xirpl304.askmovie.model.ResultsRespons;
 import id.sch.smktelkom_mlg.privateassignment.xirpl304.askmovie.service.GsonGetRequest;
@@ -26,22 +26,23 @@ import id.sch.smktelkom_mlg.privateassignment.xirpl304.askmovie.service.VolleySi
 /**
  * A simple {@link Fragment} subclass.
  */
-public class HomeFragment extends Fragment {
+public class PopularFragment extends Fragment {
+
 
     ArrayList<Results> mlist = new ArrayList<>();
-    MyAdapter myAdapter;
+    MyPopular myPopular;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
 
-        View rootView = inflater.inflate(R.layout.fragment_home, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_popular, container, false);
 
-        RecyclerView rv = (RecyclerView) rootView.findViewById(R.id.rv_recycler_view);
+        RecyclerView rv = (RecyclerView) rootView.findViewById(R.id.rv_recycler_view_popular);
         rv.setHasFixedSize(true);
-        myAdapter = new MyAdapter(this, mlist, getContext());
-        rv.setAdapter(myAdapter);
+        myPopular = new MyPopular(this, mlist, getContext());
+        rv.setAdapter(myPopular);
 
         LinearLayoutManager llm = new LinearLayoutManager(getActivity());
         rv.setLayoutManager(llm);
@@ -52,7 +53,7 @@ public class HomeFragment extends Fragment {
     }
 
     private void downloadDataResource() {
-        String url = "https://api.themoviedb.org/3/movie/now_playing?api_key=83e9bd45d01bdec860110180bf6d664b&language=en-US&page=1";
+        String url = "https://api.themoviedb.org/3/movie/popular?api_key=83e9bd45d01bdec860110180bf6d664b&language=en-US&page=1";
 
         GsonGetRequest<ResultsRespons> myRequest = new GsonGetRequest<ResultsRespons>
                 (url, ResultsRespons.class, null, new Response.Listener<ResultsRespons>() {
@@ -61,7 +62,7 @@ public class HomeFragment extends Fragment {
                     public void onResponse(ResultsRespons response) {
                         Log.d("FLOW", "onResponse: " + (new Gson().toJson(response)));
                         mlist.addAll(response.results);
-                        myAdapter.notifyDataSetChanged();
+                        myPopular.notifyDataSetChanged();
                     }
 
                 }, new Response.ErrorListener() {
@@ -73,8 +74,4 @@ public class HomeFragment extends Fragment {
                 });
         VolleySingleton.getInstance(this).addToRequestQueue(myRequest);
     }
-
-
-
-
 }
