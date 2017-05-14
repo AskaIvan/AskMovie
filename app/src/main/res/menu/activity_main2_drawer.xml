@@ -18,10 +18,6 @@
             android:id="@+id/nav_upcoming"
             android:icon="@drawable/ic_file_upload_black_24dp"
             android:title="Up Coming" />
-        <item
-            android:id="@+id/nav_like"
-            android:icon="@drawable/ic_file_download_black_24dp"
-            android:title="Liked" />
     </group>
 
 </menu>

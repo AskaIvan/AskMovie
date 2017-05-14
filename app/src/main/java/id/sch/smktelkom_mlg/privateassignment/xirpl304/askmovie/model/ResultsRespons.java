@@ -9,4 +9,6 @@ import java.util.List;
 public class ResultsRespons {
     public String page;
     public List<Results> results;
+    public String total_results;
+    public String total_pages;
 }

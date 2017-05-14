@@ -61,9 +61,9 @@ public class Main2Activity extends AppCompatActivity
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
+        //if (id == R.id.action_settings) {
+        //  return true;
+        //}
 
         return super.onOptionsItemSelected(item);
     }
@@ -97,8 +97,6 @@ public class Main2Activity extends AppCompatActivity
         } else if (id == R.id.nav_upcoming) {
             fragment = new UpcomFragment();
             setTitle("Up Coming");
-
-        } else if (id == R.id.nav_like) {
 
         }
 

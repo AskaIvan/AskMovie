@@ -10,7 +10,7 @@ public class Results {
     public String adult;
     public String overview;
     public String release_date;
-    //public List<Integer> genre_ids;
+    //public String genre_ids;
     public String id;
     public String original_title;
     public String original_language;
@@ -20,5 +20,5 @@ public class Results {
     public String vote_count;
     public String video;
     public String vote_average;
-    public int color;
+    public String img;
 }
