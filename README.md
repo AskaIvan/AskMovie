@@ -23,7 +23,7 @@
   > Aplikasi ini memuat list film dari API yang telah digunakan. Dalam aplikasi ini anda dapat melihat list "Now Palying", "Popular", "Toprate", "Up Coming" dari film-film yang ada. Aplikasi ini dapat membuat anda tau kapan jadwal film tersebut rilis. Dengan tampilan yang sederhana memudahkan user untuk melihat-lihat film yang ingin ditonton. Tidak lupa juga, untuk mengetahui apakah film itu bagus, terdapat rate dari film tersebut agar calon penonton dapat mengetahui kualitas dari film tersebut.
   
 #Kelebihan
-  > Memudahkan calon penonton untuk mengetahui jadwal release dan mengetahui sebagian isi dari film yang diinginkan.
+  > Memudahkan calon penonton untuk mengetahui jadwal release dan mengetahui sebagian isi dari film yang diinginkan. Tak lupa juga dilengkapi fitur reminder untuk mengingatkan jadwal tayang film yang akan ditonton.
 
 ># Gambar
 
