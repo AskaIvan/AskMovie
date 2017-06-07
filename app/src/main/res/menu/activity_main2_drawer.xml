@@ -18,6 +18,14 @@
             android:id="@+id/nav_upcoming"
             android:icon="@drawable/ic_file_upload_black_24dp"
             android:title="Up Coming" />
+        <item
+            android:id="@+id/nav_fav"
+            android:icon="@drawable/ic_thumb_up_black_24dp"
+            android:title="Favorite" />
+        <item
+            android:id="@+id/nav_task"
+            android:icon="@drawable/ic_date_range_black_24dp"
+            android:title="Remind Me" />
     </group>
 
 </menu>

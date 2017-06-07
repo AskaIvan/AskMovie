@@ -5,13 +5,18 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 
+import id.sch.smktelkom_mlg.privateassignment.xirpl304.askmovie.model.Fav;
+
 public class DetailActivity extends AppCompatActivity {
     public String url = "https://image.tmdb.org/t/p/w500";
+    public byte[] gambarsave = new byte[2048];
+    Fav fav;
     String Id, img, des, gambar, popu, rate, release;
 
     @Override
@@ -20,6 +25,8 @@ public class DetailActivity extends AppCompatActivity {
         setContentView(R.layout.activity_detail);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        Button bfav = (Button) findViewById(R.id.buttonfav);
 
         Intent intent = getIntent();
         Id = intent.getStringExtra("movie_title");
@@ -55,5 +62,22 @@ public class DetailActivity extends AppCompatActivity {
         });
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+        bfav.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dosimpan();
+            }
+        });
     }
+
+    private void dosimpan() {
+        String overview = getIntent().getStringExtra(Main2Activity.RESULTOVERVIEW);
+        String title = getIntent().getStringExtra(Main2Activity.RESULTTITLE);
+        byte[] backdrop_path = gambarsave;
+
+        fav = new Fav(overview, title, backdrop_path);
+        fav.save();
+    }
+
 }
