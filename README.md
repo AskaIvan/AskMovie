@@ -27,6 +27,9 @@ Navigation Drawer Activity
   
 ## Kelebihan
   > Memudahkan calon penonton untuk mengetahui jadwal release dan mengetahui sebagian isi dari film yang diinginkan. Tak lupa juga dilengkapi fitur reminder untuk mengingatkan jadwal tayang film yang akan ditonton. Dan juga dapat dilihat offline.
+  
+## Library
+  > SQLite Dasar
 
 ># Screenshoot
   ![popular](https://user-images.githubusercontent.com/22123412/27064536-100c9aca-5022-11e7-861a-9f4b843022bf.jpg)
