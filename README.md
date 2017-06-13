@@ -1,8 +1,9 @@
 # AskMovie
 
-#Link File APK Release : https://drive.google.com/file/d/0B-Pbm1yiV-7QWkhYZjdKVVhlTnM/view?usp=sharing
+## Link File APK Release
+https://drive.google.com/file/d/0B-Pbm1yiV-7QWkhYZjdKVVhlTnM/view?usp=sharing
 
-#Identitas
+## Identitas
   > Nama Lengkap  : Aska Ivan Fadhilah Gunawan
   
   > Kelas : XIR3
@@ -15,14 +16,15 @@
   
   > Nama Sekolah : SMK Telkom Malang
   
-#Alamat API : https://www.themoviedb.org/documentation/api
+## Alamat API
+https://www.themoviedb.org/documentation/api
 
-#Jenis Navigasi : Navigation Drawer Activity
+## Jenis Navigasi : Navigation Drawer Activity
 
-#Deskripsi
+## Deskripsi
   > Aplikasi ini memuat list film dari API yang telah digunakan. Dalam aplikasi ini anda dapat melihat list "Now Palying", "Popular", "Toprate", "Up Coming" dari film-film yang ada. Aplikasi ini dapat membuat anda tau kapan jadwal film tersebut rilis. Dengan tampilan yang sederhana memudahkan user untuk melihat-lihat film yang ingin ditonton. Tidak lupa juga, untuk mengetahui apakah film itu bagus, terdapat rate dari film tersebut agar calon penonton dapat mengetahui kualitas dari film tersebut.
   
-#Kelebihan
+## Kelebihan
   > Memudahkan calon penonton untuk mengetahui jadwal release dan mengetahui sebagian isi dari film yang diinginkan. Tak lupa juga dilengkapi fitur reminder untuk mengingatkan jadwal tayang film yang akan ditonton.
 
 ># Screenshoot
